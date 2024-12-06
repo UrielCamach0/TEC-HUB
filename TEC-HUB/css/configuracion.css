@@ -1,0 +1,101 @@
+/* Estilo base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.main-header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contenedor principal */
+.settings-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Secciones de configuracion */
+.settings-container section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Formularios */
+label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+input[type="checkbox"],
+select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c75d8;
+}
+
+.btn-account {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #ffa500;
+}
+
+.btn-account:hover {
+    background-color: #e59400;
+}
+
+/* Pie de pagina */
+.main-footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}

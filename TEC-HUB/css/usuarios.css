@@ -1,0 +1,149 @@
+/* Estilo base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.main-header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contenedor principal */
+.users-container {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Seccion para añadir usuarios */
+.add-user {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.add-user h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.add-user form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-user input,
+.add-user select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-user button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-user button:hover {
+    background-color: #1c75d8;
+}
+
+/* Tabla de usuarios */
+.user-list {
+    flex: 1 1 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-list h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.user-list th,
+.user-list td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-list th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.user-list td {
+    background-color: #f9f9f9;
+}
+
+.user-list button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-list .btn-edit {
+    background-color: #ffa500;
+}
+
+.user-list .btn-edit:hover {
+    background-color: #e59400;
+}
+
+.user-list .btn-delete {
+    background-color: #ff6347;
+}
+
+.user-list .btn-delete:hover {
+    background-color: #ff4500;
+}
+
+/* Pie de pagina */
+.main-footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}

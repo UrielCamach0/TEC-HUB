@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de proyectos</title>
+    <link rel="stylesheet" href="../css/proyectos.css"> <!-- Ruta al CSS -->
+</head>
+<body>
+    <header class="main-header">
+        <h1>GESTION DE PROYECTOS</h1>
+        <p>Organiza y da seguimiento a tus proyectos facilmente.</p>
+        <button class="btn-add-project" onclick="openProjectModal()">+ Añadir Proyecto</button>
+    </header>
+
+    <main class="projects-container">
+        <section class="projects-list">
+            <!-- Agregar los proyectos -->
+        </section>
+        <section class="no-projects">
+            <p>No hay proyectos aun, ¡crea uno nuevo!</p>
+        </section>
+    </main>
+
+    <!-- Modal para añadir proyecto -->
+    <div id="project-modal" class="modal hidden" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" aria-label="Cerrar" onclick="closeProjectModal()">&times;</button>
+            <h2 id="modal-title">NUEVO PROYECTO</h2>
+            <form id="add-project-form">
+                <label for="project-name">Nombre del Proyecto:</label>
+                <input type="text" id="project-name" placeholder="Escribe el nombre del proyecto" required>
+                <label for="project-description">Descripcion:</label>
+                <textarea id="project-description" placeholder="Describe el proyecto" required></textarea>
+                <label for="project-progress">Avance (%):</label>
+                <input type="number" id="project-progress" placeholder="0 - 100" min="0" max="100" required>
+                <button type="submit" class="btn-submit">Añadir Proyecto</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- chat -->
+    <section class="chat-container">
+        <div id="chat-container" class="chat-box">
+            <div class="messages">
+                <!-- mostrar los mensajes -->
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje" required>
+            <button type="submit" class="btn-send">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 TEC-HUB. ING. EN INTELIGENCIA ARTIFICIAL💻🥾.</p>
+    </footer>
+    <script src="../js/proyectos.js"></script>
+</body>
+</html>

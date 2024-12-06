@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC-HUB</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>TEC-HUB</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="proyectos.html">📂 PROYECTOS</a></li>
+                <li><a href="tareas.html">💼 TAREAS</a></li>
+                <li><a href="usuarios.html">👥 USUARIOS</a></li>
+                <li><a href="configuracion.html">⚙️ CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <div class="welcome-section">
+            <h1>BIENVENIDO A TEC-HUB</h1>
+            <p> TU PLATAFORMA PARA LA GESTION EFICIENTE Y COLABORATIVA DE TAREAS Y PROYECTOS.</p>
+            <button class="btn-start" onclick="navigateTo('proyectos')">COMENZAR</button>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2024 TEC-HUB. ING. EN INTELIGENCIA ARTIFICIAL💻🥾.</p>
+    </footer>
+    <script>
+        function navigateTo(section) {
+            window.location.href = `${section}.html`;
+        }
+    </script>
+</body>
+</html>

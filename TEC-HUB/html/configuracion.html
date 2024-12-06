@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracion</title>
+    <link rel="stylesheet" href="../css/configuracion.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>CONFIGURACION</h1>
+        <p>AJUSTA TUS NECESIDADES EN LA PLATAFORMA.</p>
+    </header>
+    <main class="settings-container">
+        <section class="general-settings">
+            <h2>CONFIGURACION GENERAL</h2>
+            <form id="general-settings-form">
+                <label for="language">IDIOMA:</label>
+                <select id="language">
+                    <option value="es">ESPAÑOL</option>
+                    <option value="en">INGLES</option>
+                </select>
+                <label for="notifications">NOTIFICACIONES:</label>
+                <input type="checkbox" id="notifications" checked>
+                <button type="submit" class="btn-save-settings">GUARDAR CAMBIOS</button>
+            </form>
+        </section>
+        <section class="account-settings">
+            <h2>GESTION DE CUENTA</h2>
+            <button class="btn-account">CAMBIAR CONTRASEÑA</button>
+            <button class="btn-account">CERRAR SESION</button>
+        </section>
+        <section class="appearance-settings">
+            <h2>PREFERENCIAS</h2>
+            <label for="theme">TEMA:</label>
+            <select id="theme">
+                <option value="light">CLARO</option>
+                <option value="dark">OSCURO</option>
+            </select>
+            <button class="btn-save-settings">APLICAR TEMA</button>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2024 TEC-HUB. ING. EN INTELIGENCIA ARTIFICIAL💻🥾.</p>
+    </footer>
+    <script src="../js/configuracion.js"></script>
+</body>
+</html>

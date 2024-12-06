@@ -1,0 +1,190 @@
+/* Estilo basico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.main-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+}
+
+.main-header p {
+    font-size: 1.2em;
+}
+
+.btn-add-project {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.projects-container {
+    padding: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.project-card h3 {
+    margin: 0;
+}
+
+.project-card .btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.chat-box {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message .btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* Contenedor del chat */
+.chat-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja del chat */
+.chat-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Burbujas de mensaje */
+.message {
+    background-color: #e1f5fe;
+    border: 1px solid #b3e5fc;
+    border-radius: 10px;
+    padding: 10px 15px;
+    max-width: 80%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Burbujas de los mensajes enviados */
+.message.sent {
+    background-color: #c8e6c9;
+    border-color: #a5d6a7;
+    align-self: flex-end;
+}
+
+/* Boton para eliminar mensaje */
+.message .btn-delete {
+    background-color: transparent;
+    color: #f44336;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Input y boton del formulario del chat */
+.chat-container form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.chat-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.chat-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.chat-container button:hover {
+    background-color: #0056b3;
+}

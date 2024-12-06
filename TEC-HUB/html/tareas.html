@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="../css/tareas.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>TAREAS</h1>
+        <p>AÑADE TUS TAREAS PARA RECORDARTE</p>
+    </header>
+    <main class="tasks-container">
+        <section class="add-task">
+            <h2>Añadir Nueva Tarea</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-name" placeholder="Escribe el nombre de la tarea" required>
+                <textarea id="task-details" placeholder="Detalles de la tarea" required></textarea>
+                <button type="submit" class="btn-add-task">Añadir Tarea</button>
+            </form>
+        </section>
+        <section class="tasks-list">
+            <h2>Lista de Tareas</h2>
+            <ul id="task-list">
+                <!-- Tareas dinamicas -->
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2024 TEC-HUB. ING. EN INTELIGENCIA ARTIFICIAL💻🥾.</p>
+    </footer>
+    <script src="../js/tareas.js"></script>
+</body>
+</html>

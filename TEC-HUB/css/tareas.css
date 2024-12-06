@@ -1,0 +1,136 @@
+/* Estilo base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.main-header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contenedor principal */
+.tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Seccion para añadir tareas */
+.add-task {
+    flex: 1 1 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.add-task h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.add-task form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-task input,
+.add-task textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-task button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-task button:hover {
+    background-color: #1c75d8;
+}
+
+/* Lista de tareas */
+.tasks-list {
+    flex: 2 1 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.tasks-list h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.task-item.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    color: #ff6347;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.task-item button:hover {
+    color: #ff4500;
+}
+
+/* Pie de pagina */
+.main-footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+}

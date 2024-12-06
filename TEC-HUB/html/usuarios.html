@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../css/usuarios.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>CONTROL DE USUARIOS</h1>
+        <p>Administra a los usuarios de la plataforma de forma eficiente.</p>
+    </header>
+    <main class="users-container">
+        <section class="add-user">
+            <h2>Añadir Nuevo Usuario</h2>
+            <form id="add-user-form">
+                <input type="text" id="user-name" placeholder="Nombre del usuario" required>
+                <input type="email" id="user-email" placeholder="Correo electrónico" required>
+                <select id="user-role" required>
+                    <option value="">Seleccionar Rol</option>
+                    <option value="Admin">Administrador</option>
+                    <option value="User">Usuario</option>
+                </select>
+                <button type="submit" class="btn-add-user">Añadir Usuario</button>
+            </form>
+        </section>
+        <section class="user-list">
+            <h2>Lista de Usuarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table">
+                    <!-- Usuarios dinamicos -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2024 TEC-HUB. ING. EN INTELIGENCIA ARTIFICIAL💻🥾.</p>
+    </footer>
+    <script src="../js/usuarios.js"></script>
+</body>
+</html>
